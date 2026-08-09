@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>Bắt Cặp - Học Web</title>
+
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <style>
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        /* HERO */
+
+        .hero {
+            background: #0d6efd;
+            color: white;
+            border-radius: 8px;
+        }
+
+
+        /* CARD */
+
+        .level-card {
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow:
+                0 8px 20px rgba(0, 0, 0, 0.12) !important;
+        }
+
+
+        /* GALLERY */
+
+        .gallery-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+
+        /* BÀI 3 */
+
+        .login-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+
+        .login-title {
+            background-color: #d9edf7;
+            color: #31708f;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+
+        /* BÀI 4 */
+
+        .travel-card {
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .travel-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px
+                rgba(0, 0, 0, 0.15);
+        }
+
+        .travel-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .carousel-item img {
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.55);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            margin-top: 50px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ===================================================== -->
+<!-- NAVBAR -->
+<!-- ===================================================== -->
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold"
+           href="#trangchu">
+
+            <i class="fa-solid fa-user-group text-primary"></i>
+
+            Bắt Cặp
+
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#primaryNav"
+            aria-controls="primaryNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="primaryNav">
+
+            <div class="navbar-nav ms-auto">
+
+
+                <a
+                    class="nav-link active"
+                    href="#trangchu">
+
+                    Trang chủ
+
+                </a>
+
+
+                <a
+                    class="nav-link"
+                    href="#lo-trinh">
+
+                    Lộ trình
+
+                </a>
+
+
+                <a
+                    class="nav-link"
+                    href="#thu-vien">
+
+                    Thư viện ảnh
+
+                </a>
+
+
+                <a
+                    class="nav-link"
+                    href="#bai3">
+
+                    Bài 3
+
+                </a>
+
+
+                <a
+                    class="nav-link"
+                    href="#bai4">
+
+                    Bài 4
+
+                </a>
+
+
+                <a
+                    class="btn btn-primary ms-lg-3 mt-2 mt-lg-0"
+                    href="#lo-trinh">
+
+                    Tham gia
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ===================================================== -->
+<!-- TRANG CHỦ -->
+<!-- ===================================================== -->
+
+<main class="container mt-4">
+
+
+<section
+    id="trangchu"
+    class="hero p-4 p-lg-5 mb-5">
+
+    <div class="d-flex flex-column align-items-start gap-3">
+
+        <p class="text-uppercase fw-semibold small mb-0">
+
+            Xin chào
+
+        </p>
+
+
+        <h1 class="display-5 fw-bold mb-0">
+
+            Tìm bạn đồng hành để học tốt hơn
+
+        </h1>
+
+
+        <p class="lead mb-0">
+
+            Hãy lựa chọn một trong các chủ đề phù hợp
+            với trình độ của bạn, sau đó bắt cặp với
+            một người bạn để cùng nhau khám phá,
+            thử nghiệm và chia sẻ kiến thức.
+
+        </p>
+
+
+        <a
+            href="#lo-trinh"
+            class="btn btn-light btn-lg mt-2">
+
+            Khám phá lộ trình
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- LỘ TRÌNH -->
+<!-- ===================================================== -->
+
+<section id="lo-trinh" class="mb-5">
+
+    <div class="text-center mb-5">
+
+        <p class="text-uppercase fw-semibold text-primary mb-2">
+
+            Lộ trình học
+
+        </p>
+
+
+        <h2 class="fw-bold">
+
+            Chọn mức độ phù hợp
+
+        </h2>
+
+
+        <p class="text-muted">
+
+            Mỗi cấp độ bao gồm các chủ đề trọng tâm,
+            giúp bạn tiến bộ vững chắc.
+
+        </p>
+
+    </div>
+
+
+    <div class="row g-4">
+
+
+        <!-- CẤP ĐỘ 1 -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article
+                class="card level-card border-0 shadow-sm">
+
+                <div
+                    class="card-body d-flex flex-column">
+
+
+                    <div
+                        class="d-flex align-items-center
+                               justify-content-between mb-3">
+
+                        <span
+                            class="badge rounded-pill text-bg-secondary">
+
+                            Cấp độ 1
+
+                        </span>
+
+
+                        <small class="text-muted">
+
+                            HTML/CSS
+
+                        </small>
+
+                    </div>
+
+
+                    <h5 class="card-title">
+
+                        Nền tảng Web
+
+                    </h5>
+
+
+                    <p
+                        class="card-text text-muted flex-grow-1">
+
+                        Hiểu cấu trúc trang web,
+                        cách định dạng và trình bày
+                        nội dung cơ bản.
+
+                    </p>
+
+
+                    <ul
+                        class="list-unstyled small
+                               text-muted mb-4">
+
+                        <li class="mb-2">
+                            Basic HTML tags
+                        </li>
+
+                        <li class="mb-2">
+                            CSS properties
+                        </li>
+
+                        <li>
+                            Selectors
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                        href="#thu-vien"
+                        class="btn btn-outline-primary w-100">
+
+                        Khám phá
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+
+        <!-- CẤP ĐỘ 2 -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article
+                class="card level-card border-0 shadow-sm">
+
+                <div
+                    class="card-body d-flex flex-column">
+
+
+                    <div
+                        class="d-flex align-items-center
+                               justify-content-between mb-3">
+
+                        <span
+                            class="badge rounded-pill text-bg-success">
+
+                            Cấp độ 2
+
+                        </span>
+
+
+                        <small class="text-muted">
+
+                            Bootstrap
+
+                        </small>
+
+                    </div>
+
+
+                    <h5 class="card-title">
+
+                        Bố cục Bootstrap
+
+                    </h5>
+
+
+                    <p
+                        class="card-text text-muted flex-grow-1">
+
+                        Làm quen với hệ thống lưới
+                        và các thành phần giao diện
+                        của Bootstrap.
+
+                    </p>
+
+
+                    <ul
+                        class="list-unstyled small
+                               text-muted mb-4">
+
+                        <li class="mb-2">
+                            Grid System
+                        </li>
+
+                        <li class="mb-2">
+                            Navbar
+                        </li>
+
+                        <li>
+                            Cards
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                        href="#thu-vien"
+                        class="btn btn-outline-success w-100">
+
+                        Khám phá
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+
+        <!-- CẤP ĐỘ 3 -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article
+                class="card level-card border-0 shadow-sm">
+
+                <div
+                    class="card-body d-flex flex-column">
+
+
+                    <div
+                        class="d-flex align-items-center
+                               justify-content-between mb-3">
+
+                        <span
+                            class="badge rounded-pill text-bg-info">
+
+                            Cấp độ 3
+
+                        </span>
+
+
+                        <small class="text-muted">
+
+                            JavaScript
+
+                        </small>
+
+                    </div>
+
+
+                    <h5 class="card-title">
+
+                        Tương tác người dùng
+
+                    </h5>
+
+
+                    <p
+                        class="card-text text-muted flex-grow-1">
+
+                        Tìm hiểu cách tạo các tương tác
+                        và xử lý sự kiện trên trang web.
+
+                    </p>
+
+
+                    <ul
+                        class="list-unstyled small
+                               text-muted mb-4">
+
+                        <li class="mb-2">
+                            JavaScript
+                        </li>
+
+                        <li class="mb-2">
+                            Events
+                        </li>
+
+                        <li>
+                            DOM
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                        href="#thu-vien"
+                        class="btn btn-outline-info w-100">
+
+                        Khám phá
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+
+        <!-- CẤP ĐỘ 4 -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <article
+                class="card level-card border-0 shadow-sm">
+
+                <div
+                    class="card-body d-flex flex-column">
+
+
+                    <div
+                        class="d-flex align-items-center
+                               justify-content-between mb-3">
+
+                        <span
+                            class="badge rounded-pill text-bg-warning">
+
+                            Cấp độ 4
+
+                        </span>
+
+
+                        <small class="text-muted">
+
+                            Advanced
+
+                        </small>
+
+                    </div>
+
+
+                    <h5 class="card-title">
+
+                        Xây dựng ứng dụng
+
+                    </h5>
+
+
+                    <p
+                        class="card-text text-muted flex-grow-1">
+
+                        Áp dụng kiến thức đã học để
+                        xây dựng các dự án web hoàn chỉnh.
+
+                    </p>
+
+
+                    <ul
+                        class="list-unstyled small
+                               text-muted mb-4">
+
+                        <li class="mb-2">
+                            Project
+                        </li>
+
+                        <li class="mb-2">
+                            Responsive
+                        </li>
+
+                        <li>
+                            Deployment
+                        </li>
+
+                    </ul>
+
+
+                    <a
+                        href="#thu-vien"
+                        class="btn btn-outline-warning w-100">
+
+                        Khám phá
+
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- THƯ VIỆN ẢNH -->
+<!-- ===================================================== -->
+
+<section id="thu-vien" class="py-5">
+
+    <div class="text-center mb-4">
+
+        <p
+            class="text-uppercase fw-semibold text-primary mb-2">
+
+            Thư viện
+
+        </p>
+
+
+        <h2 class="fw-bold">
+
+            Thư viện ảnh của tôi
+
+        </h2>
+
+
+        <p class="text-muted">
+
+            Bộ sưu tập hình ảnh của tôi.
+
+        </p>
+
+    </div>
+
+
+    <ul class="row list-unstyled g-3">
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="1.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 1">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="2.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 2">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="3.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 3">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="4.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 4">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="5.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 5">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="6.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 6">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="7.webp"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 7">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="8.webp"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 8">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="9.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 9">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="10.jfif"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 10">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="11.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 11">
+        </li>
+
+
+        <li class="col-6 col-sm-4 col-md-3 col-lg-2">
+            <img src="12.jpg"
+                 class="img-fluid gallery-img"
+                 alt="Ảnh 12">
+        </li>
+
+
+    </ul>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- BÀI 3 -->
+<!-- ===================================================== -->
+
+<section id="bai3" class="py-5">
+
+
+    <div class="text-center mb-5">
+
+        <p class="text-uppercase fw-semibold text-primary">
+
+            Bài 3
+
+        </p>
+
+
+        <h2 class="fw-bold">
+
+            Thiết kế các biểu mẫu đăng nhập
+
+        </h2>
+
+
+        <p class="text-muted">
+
+            Sử dụng Bootstrap 5 để thiết kế biểu mẫu đăng nhập.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- 1. FORM NGANG -->
+    <!-- ================================================= -->
+
+    <div class="login-box shadow-sm">
+
+        <div class="login-title">
+
+            1. Biểu mẫu đăng nhập dạng ngang
+            (Horizontal Form)
+
+        </div>
+
+
+        <form>
+
+
+            <div class="row mb-3">
+
+                <label
+                    class="col-sm-3 col-form-label fw-bold">
+
+                    Email:
+
+                </label>
+
+
+                <div class="col-sm-9">
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Nhập vào email">
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row mb-3">
+
+                <label
+                    class="col-sm-3 col-form-label fw-bold">
+
+                    Mật khẩu:
+
+                </label>
+
+
+                <div class="col-sm-9">
+
+                    <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Nhập vào mật khẩu">
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row mb-3">
+
+                <div class="offset-sm-3 col-sm-9">
+
+                    <div class="form-check">
+
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="remember1">
+
+                        <label
+                            class="form-check-label"
+                            for="remember1">
+
+                            Ghi nhớ tôi
+
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="offset-sm-3 col-sm-9">
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Đăng nhập
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- 2. FORM DỌC -->
+    <!-- ================================================= -->
+
+    <div class="login-box shadow-sm">
+
+        <div class="login-title">
+
+            2. Biểu mẫu đăng nhập dạng đứng
+            (Vertical Form)
+
+        </div>
+
+
+        <form>
+
+
+            <div class="mb-3">
+
+                <label class="form-label fw-bold">
+
+                    Email:
+
+                </label>
+
+
+                <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Nhập vào email">
+
+            </div>
+
+
+
+            <div class="mb-3">
+
+                <label class="form-label fw-bold">
+
+                    Password:
+
+                </label>
+
+
+                <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Nhập vào mật khẩu">
+
+            </div>
+
+
+
+            <div class="form-check mb-3">
+
+                <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="remember2">
+
+                <label
+                    class="form-check-label"
+                    for="remember2">
+
+                    Ghi nhớ tôi
+
+                </label>
+
+            </div>
+
+
+
+            <button
+                type="submit"
+                class="btn btn-primary">
+
+                Đăng nhập
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- 3. INLINE FORM -->
+    <!-- ================================================= -->
+
+    <div class="login-box shadow-sm">
+
+        <div class="login-title">
+
+            3. Biểu mẫu đăng nhập dạng một dòng
+            (Inline Form)
+
+        </div>
+
+
+        <form class="row g-2 align-items-center">
+
+
+            <div class="col-md-3">
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+
+                        <i class="fa-solid fa-user"></i>
+
+                    </span>
+
+
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Nhập vào email">
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-3">
+
+                <div class="input-group">
+
+                    <span class="input-group-text">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                    </span>
+
+
+                    <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Nhập vào mật khẩu">
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-2">
+
+                <div class="form-check">
+
+                    <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="remember3">
+
+                    <label
+                        class="form-check-label"
+                        for="remember3">
+
+                        Ghi nhớ tôi
+
+                    </label>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-2">
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    Đăng nhập
+
+                </button>
+
+            </div>
+
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- 4. MODAL -->
+    <!-- ================================================= -->
+
+    <div class="login-box shadow-sm">
+
+        <h3 class="fw-bold mb-3">
+
+            Mở biểu mẫu đăng nhập
+
+        </h3>
+
+
+        <button
+            type="button"
+            class="btn btn-info text-white"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal">
+
+            Mở hộp thoại
+
+        </button>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- MODAL ĐĂNG NHẬP -->
+<!-- ===================================================== -->
+
+<div
+    class="modal fade"
+    id="loginModal"
+    tabindex="-1"
+    aria-hidden="true">
+
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+
+            <div class="modal-header">
+
+                <h4 class="modal-title fw-bold">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                    Đăng nhập
+
+                </h4>
+
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+
+                </button>
+
+            </div>
+
+
+
+            <div class="modal-body">
+
+                <form>
+
+
+                    <div class="mb-3">
+
+                        <label
+                            class="form-label fw-bold">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            Người dùng:
+
+                        </label>
+
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Nhập tên người dùng">
+
+                    </div>
+
+
+
+                    <div class="mb-3">
+
+                        <label
+                            class="form-label fw-bold">
+
+                            <i class="fa-solid fa-key"></i>
+
+                            Mật khẩu:
+
+                        </label>
+
+
+                        <input
+                            type="password"
+                            class="form-control"
+                            placeholder="Nhập mật khẩu">
+
+                    </div>
+
+
+
+                    <div class="form-check mb-3">
+
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="remember4">
+
+                        <label
+                            class="form-check-label"
+                            for="remember4">
+
+                            Ghi nhớ tôi
+
+                        </label>
+
+                    </div>
+
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-success w-100">
+
+                        <i class="fa-solid fa-power-off"></i>
+
+                        Đăng nhập
+
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+            <div
+                class="modal-footer justify-content-between">
+
+
+                <button
+                    type="button"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                    Hủy bỏ
+
+                </button>
+
+
+                <div class="text-end">
+
+                    <small>
+
+                        Bạn chưa phải là thành viên?
+
+                        <a href="#">
+
+                            Đăng ký
+
+                        </a>
+
+                    </small>
+
+
+                    <br>
+
+
+                    <small>
+
+                        <a href="#">
+
+                            Quên mật khẩu?
+
+                        </a>
+
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================================== -->
+<!-- BÀI 4 - WEBSITE DU LỊCH -->
+<!-- ===================================================== -->
+
+<section id="bai4" class="py-5">
+
+
+    <div class="text-center mb-5">
+
+        <p class="text-uppercase fw-semibold text-primary">
+
+            Bài 4
+
+        </p>
+
+
+        <h2 class="fw-bold">
+
+            Website du lịch Việt Nam
+
+        </h2>
+
+
+        <p class="text-muted">
+
+            Khám phá những địa điểm du lịch nổi tiếng.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- SLIDE ẢNH DU LỊCH -->
+    <!-- ================================================= -->
+
+    <div
+        id="travelCarousel"
+        class="carousel slide mb-5"
+        data-bs-ride="carousel">
+
+
+        <!-- INDICATOR -->
+
+        <div class="carousel-indicators">
+
+
+            <button
+                type="button"
+                data-bs-target="#travelCarousel"
+                data-bs-slide-to="0"
+                class="active">
+            </button>
+
+
+            <button
+                type="button"
+                data-bs-target="#travelCarousel"
+                data-bs-slide-to="1">
+            </button>
+
+
+            <button
+                type="button"
+                data-bs-target="#travelCarousel"
+                data-bs-slide-to="2">
+            </button>
+
+
+            <button
+                type="button"
+                data-bs-target="#travelCarousel"
+                data-bs-slide-to="3">
+            </button>
+
+
+        </div>
+
+
+
+        <div class="carousel-inner">
+
+
+            <!-- HẠ LONG -->
+
+            <div class="carousel-item active">
+
+                <img
+                    src="1.jpg"
+                    class="d-block w-100"
+                    alt="Vịnh Hạ Long">
+
+
+                <div class="carousel-caption">
+
+                    <h2>
+
+                        Vịnh Hạ Long
+
+                    </h2>
+
+
+                    <p>
+
+                        Một trong những địa điểm
+                        du lịch nổi tiếng của Việt Nam.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ĐÀ NẴNG -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="2.jpg"
+                    class="d-block w-100"
+                    alt="Đà Nẵng">
+
+
+                <div class="carousel-caption">
+
+                    <h2>
+
+                        Đà Nẵng
+
+                    </h2>
+
+
+                    <p>
+
+                        Thành phố biển xinh đẹp
+                        và hiện đại.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ĐÀ LẠT -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="3.jpg"
+                    class="d-block w-100"
+                    alt="Đà Lạt">
+
+
+                <div class="carousel-caption">
+
+                    <h2>
+
+                        Đà Lạt
+
+                    </h2>
+
+
+                    <p>
+
+                        Thành phố ngàn hoa
+                        với khí hậu mát mẻ.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PHÚ QUỐC -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="4.jpg"
+                    class="d-block w-100"
+                    alt="Phú Quốc">
+
+
+                <div class="carousel-caption">
+
+                    <h2>
+
+                        Phú Quốc
+
+                    </h2>
+
+
+                    <p>
+
+                        Thiên đường biển đảo
+                        tuyệt đẹp.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- PREV -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#travelCarousel"
+            data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+
+
+        <!-- NEXT -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#travelCarousel"
+            data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- GIỚI THIỆU -->
+    <!-- ================================================= -->
+
+    <div class="text-center mb-5">
+
+        <h3 class="fw-bold text-primary">
+
+            Khám phá du lịch Việt Nam
+
+        </h3>
+
+
+        <p class="text-muted">
+
+            Việt Nam có nhiều cảnh đẹp,
+            văn hóa phong phú và những điểm
+            du lịch hấp dẫn.
+
+        </p>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- ĐỊA ĐIỂM DU LỊCH -->
+    <!-- ================================================= -->
+
+    <div class="row g-4">
+
+
+        <!-- HẠ LONG -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div
+                class="card travel-card border-0 shadow-sm">
+
+                <img
+                    src="1.jpg"
+                    class="card-img-top"
+                    alt="Vịnh Hạ Long">
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+
+                        Vịnh Hạ Long
+
+                    </h5>
+
+
+                    <p class="card-text text-muted">
+
+                        Vịnh Hạ Long nổi tiếng
+                        với hàng nghìn đảo đá
+                        vôi tuyệt đẹp.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="btn btn-primary">
+
+                        Xem thêm
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ĐÀ NẴNG -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div
+                class="card travel-card border-0 shadow-sm">
+
+                <img
+                    src="2.jpg"
+                    class="card-img-top"
+                    alt="Đà Nẵng">
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+
+                        Đà Nẵng
+
+                    </h5>
+
+
+                    <p class="card-text text-muted">
+
+                        Đà Nẵng có những bãi biển
+                        đẹp và nhiều địa điểm
+                        tham quan hấp dẫn.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="btn btn-primary">
+
+                        Xem thêm
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ĐÀ LẠT -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div
+                class="card travel-card border-0 shadow-sm">
+
+                <img
+                    src="3.jpg"
+                    class="card-img-top"
+                    alt="Đà Lạt">
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+
+                        Đà Lạt
+
+                    </h5>
+
+
+                    <p class="card-text text-muted">
+
+                        Đà Lạt nổi tiếng với
+                        khí hậu mát mẻ và nhiều
+                        loài hoa đẹp.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="btn btn-primary">
+
+                        Xem thêm
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHÚ QUỐC -->
+
+        <div class="col-12 col-md-6 col-lg-3">
+
+            <div
+                class="card travel-card border-0 shadow-sm">
+
+                <img
+                    src="4.jpg"
+                    class="card-img-top"
+                    alt="Phú Quốc">
+
+
+                <div class="card-body">
+
+                    <h5 class="card-title">
+
+                        Phú Quốc
+
+                    </h5>
+
+
+                    <p class="card-text text-muted">
+
+                        Phú Quốc sở hữu biển xanh,
+                        cát trắng và nhiều khu
+                        nghỉ dưỡng.
+
+                    </p>
+
+
+                    <a
+                        href="#"
+                        class="btn btn-primary">
+
+                        Xem thêm
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================================== -->
+<!-- PHẦN KẾT -->
+<!-- ===================================================== -->
+
+<section
+    class="bg-white rounded-4 shadow-sm
+           p-4 p-lg-5 text-center mb-5">
+
+
+    <p class="text-uppercase fw-semibold text-primary">
+
+        Học cùng nhau
+
+    </p>
+
+
+    <h2 class="fw-bold mb-3">
+
+        Sẵn sàng bắt đầu?
+
+    </h2>
+
+
+    <p class="text-muted mb-4">
+
+        Chọn cấp độ phù hợp và bắt đầu
+        hành trình học Web cùng bạn đồng hành
+        của mình.
+
+    </p>
+
+
+    <a
+        href="#lo-trinh"
+        class="btn btn-primary px-4">
+
+        Bắt đầu học
+
+    </a>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
+
+<footer class="bg-dark text-white py-4">
+
+
+    <div class="container">
+
+
+        <p class="text-center small mb-0">
+
+            Công nghệ web học kỳ 2025 •
+            Thiết kế bằng Bootstrap 5
+
+        </p>
+
+
+        <p class="text-center mt-2 mb-0">
+
+            <i class="fa-brands fa-facebook mx-2"></i>
+
+            <i class="fa-brands fa-instagram mx-2"></i>
+
+            <i class="fa-brands fa-youtube mx-2"></i>
+
+        </p>
+
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- ===================================================== -->
+<!-- BOOTSTRAP JAVASCRIPT -->
+<!-- ===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>
