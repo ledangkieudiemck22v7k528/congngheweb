@@ -1,0 +1,8 @@
+CREATE TABLE activities (
+    id serial PRIMARY KEY,
+    name text NOT NULL,
+    location text NOT NULL,
+    description text NOT NULL,
+    activity_date date NOT NULL,
+    volunteer_limit integer NOT NULL CHECK (volunteer_limit BETWEEN 3 AND 100)
+);
